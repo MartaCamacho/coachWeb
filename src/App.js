@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import React, {useState} from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -10,7 +10,16 @@ function App() {
 
     const toggle = () => {
         setIsOpen(!isOpen);
+        let body = document.getElementsByTagName("body")[0];
+        if(isOpen !== true) {
+          return body.classList.add("body-navbar-open");
+        } else {
+          return body.classList.remove("body-navbar-open");
+        }
+        
     }
+
+
   return (
     <Router>
       <div className="App">

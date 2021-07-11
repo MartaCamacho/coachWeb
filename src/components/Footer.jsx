@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <footer className="footer-container">
-            footer
+            <p>Made with ♥ by <a href="mailto:contacto@martacamacho.com" className="footer-link">Marta</a></p>
         </footer>
     )
 }

@@ -6,9 +6,9 @@ function Navbar({ toggle, isOpen }) {
         <nav className="navbar-container">
             <div className={isOpen ? "navbar-items navbar-open" : "navbar-items navbar-closed"}>
                 <ul>
-                    <li><Link to="#inicio">Inicio</Link></li>
-                    <li><Link to="#coaching">Coaching</Link></li>
-                    <li><Link to="#contacto">Contacto</Link></li>
+                    <li><Link onClick={() => toggle()} to="#inicio">Inicio</Link></li>
+                    <li><Link onClick={() => toggle()} to="#coaching">Coaching</Link></li>
+                    <li><Link onClick={() => toggle()} to="#contacto">Contacto</Link></li>
                 </ul>
             </div>
             <div className="navbar-toggle" onClick={() => toggle()}>
