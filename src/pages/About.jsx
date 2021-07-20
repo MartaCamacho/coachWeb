@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Book() {
+function About() {
     return (
         <div>
-            reserva
+            sobre mi
         </div>
     )
 }
 
-export default Book
+export default About
